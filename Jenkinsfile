@@ -16,7 +16,7 @@ pipeline{
     Stages{
         Stage("Checkout from SCM"){
             steps{
-                git branch: 'main', credentialsID: 'github', url: 'https://github.com/bhargavach29071996/pracProject.git'
+                git branch: 'main', credentialsID: 'github', url: 'https://github.com/k-uday-1804/jenkins.git'
             }
         }
     }
