@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/movies")
 @Slf4j
 public class MovieController {
+    @GetMapping("/hello")
+    public String sayHello(){
+        return "Hello";
+    }
     @Autowired
     private MovieService movieService;
     @GetMapping("/{id}")
